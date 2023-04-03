@@ -61,18 +61,21 @@ import java.util.Date;
                 int duration = Toast.LENGTH_SHORT;
                 if(toastError != null){toastError.cancel();}
                 toastError = Toast.makeText(this, R.string.divide_zero, duration);
+                toastError.setMargin(75,75);
                 toastError.show();
                 return;
             }catch (NullPointerException e){
                 int duration = Toast.LENGTH_SHORT;
                 if(toastError != null){toastError.cancel();}
                 toastError = Toast.makeText(this, R.string.null_data, duration);
+                toastError.setMargin(75,75);
                 toastError.show();
                 return;
             }catch (NumberFormatException e){
                 int duration = Toast.LENGTH_SHORT;
                 if(toastError != null){toastError.cancel();}
                 toastError = Toast.makeText(this, R.string.wrong_format, duration);
+                toastError.setMargin(75,75);
                 toastError.show();
                 return;
             }
@@ -81,6 +84,7 @@ import java.util.Date;
             else { int duration = Toast.LENGTH_SHORT;
                 if(toastError != null){toastError.cancel();}
                 toastError = Toast.makeText(this, R.string.wrong_operation, duration);
+                toastError.setMargin(75,75);
                 toastError.show();
                 return;}
 
